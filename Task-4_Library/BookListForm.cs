@@ -229,12 +229,12 @@ namespace Task_4_Library
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Close_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void Search_TextChanged(object sender, EventArgs e)
         {
             currentPage = 1;
             UpdateProductCards();
@@ -243,7 +243,7 @@ namespace Task_4_Library
         // Убрал предыдущий метод, так как он имел неправильное название
 
         bool isAdd;
-        private void button1_Click(object sender, EventArgs e)
+        private void IsAdd_Click(object sender, EventArgs e)
         {
             isAdd = true;
             this.Hide();

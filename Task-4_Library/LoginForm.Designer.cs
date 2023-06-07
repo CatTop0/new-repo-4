@@ -31,7 +31,7 @@
             this.LoginField = new System.Windows.Forms.TextBox();
             this.PasswordField = new System.Windows.Forms.TextBox();
             this.LogInBtn = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Exit = new System.Windows.Forms.Label();
             this.RegLabel = new System.Windows.Forms.Label();
             this.guestAuth = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -73,16 +73,16 @@
             this.LogInBtn.UseVisualStyleBackColor = false;
             this.LogInBtn.Click += new System.EventHandler(this.EntryButton_Click);
             // 
-            // label2
+            // Exit
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(244, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 22);
-            this.label2.TabIndex = 55;
-            this.label2.Text = "X";
-            this.label2.Click += new System.EventHandler(this.ExitButton_Click);
+            this.Exit.AutoSize = true;
+            this.Exit.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Exit.Location = new System.Drawing.Point(244, 9);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(20, 22);
+            this.Exit.TabIndex = 55;
+            this.Exit.Text = "X";
+            this.Exit.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // RegLabel
             // 
@@ -117,7 +117,7 @@
             this.ClientSize = new System.Drawing.Size(276, 285);
             this.Controls.Add(this.guestAuth);
             this.Controls.Add(this.RegLabel);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.LogInBtn);
             this.Controls.Add(this.PasswordField);
             this.Controls.Add(this.LoginField);
@@ -137,7 +137,7 @@
         private System.Windows.Forms.TextBox LoginField;
         private System.Windows.Forms.TextBox PasswordField;
         private System.Windows.Forms.Button LogInBtn;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Exit;
         private System.Windows.Forms.Label RegLabel;
         private System.Windows.Forms.Label guestAuth;
     }

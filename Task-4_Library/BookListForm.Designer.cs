@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.Header = new System.Windows.Forms.Panel();
             this.RegLabel = new System.Windows.Forms.Label();
             this.FullName = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Close = new System.Windows.Forms.Label();
             this.LogInBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.sort = new System.Windows.Forms.ComboBox();
@@ -39,17 +39,17 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.RightBtn = new System.Windows.Forms.Label();
             this.leftBtn = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.Header.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // Header
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.panel1.Controls.Add(this.RegLabel);
-            this.panel1.Location = new System.Drawing.Point(12, 30);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(661, 50);
-            this.panel1.TabIndex = 0;
+            this.Header.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.Header.Controls.Add(this.RegLabel);
+            this.Header.Location = new System.Drawing.Point(12, 30);
+            this.Header.Name = "Header";
+            this.Header.Size = new System.Drawing.Size(661, 50);
+            this.Header.TabIndex = 0;
             // 
             // RegLabel
             // 
@@ -75,16 +75,16 @@
             this.FullName.TabIndex = 51;
             this.FullName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label2
+            // Close
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(653, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 22);
-            this.label2.TabIndex = 54;
-            this.label2.Text = "X";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.Close.AutoSize = true;
+            this.Close.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Close.Location = new System.Drawing.Point(653, 5);
+            this.Close.Name = "Close";
+            this.Close.Size = new System.Drawing.Size(20, 22);
+            this.Close.TabIndex = 54;
+            this.Close.Text = "X";
+            this.Close.Click += new System.EventHandler(this.Close_Click);
             // 
             // LogInBtn
             // 
@@ -136,7 +136,7 @@
             this.addBtn.TabIndex = 57;
             this.addBtn.Text = "Добавить книгу";
             this.addBtn.UseVisualStyleBackColor = false;
-            this.addBtn.Click += new System.EventHandler(this.button1_Click);
+            this.addBtn.Click += new System.EventHandler(this.IsAdd_Click);
             // 
             // textBox1
             // 
@@ -146,7 +146,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(136, 25);
             this.textBox1.TabIndex = 60;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.TextChanged += new System.EventHandler(this.Search_TextChanged);
             // 
             // RightBtn
             // 
@@ -188,14 +188,14 @@
             this.Controls.Add(this.LogInBtn);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.FullName);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Close);
+            this.Controls.Add(this.Header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BookListForm";
             this.Text = "BookListForm";
             this.Load += new System.EventHandler(this.BookListForm_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Header.ResumeLayout(false);
+            this.Header.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,10 +203,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel Header;
         private System.Windows.Forms.Label RegLabel;
         private System.Windows.Forms.Label FullName;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Close;
         private System.Windows.Forms.Button LogInBtn;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.ComboBox sort;

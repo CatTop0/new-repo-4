@@ -30,12 +30,12 @@ namespace Task_4_Library
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Close_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Save_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(NameField.Text) || string.IsNullOrWhiteSpace(AuthorField.Text) || NumberField.Text == "")
             {
@@ -104,16 +104,12 @@ namespace Task_4_Library
             
         }
 
-        private void LogInBtn_Click(object sender, EventArgs e)
+
+        private void Cancel_Click(object sender, EventArgs e)
         {
             this.Close();
             BookListForm bookListForm = new BookListForm(null, 1);
             bookListForm.Show();
-        }
-
-        private void NumberField_TextChanged(object sender, EventArgs e)
-        {
-            
         }
     }
 }
