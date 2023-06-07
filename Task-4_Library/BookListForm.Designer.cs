@@ -34,7 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.LogInBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.sort = new System.Windows.Forms.ComboBox();
             this.addBtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.RightBtn = new System.Windows.Forms.Label();
@@ -112,18 +112,18 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(659, 244);
             this.tableLayoutPanel1.TabIndex = 55;
             // 
-            // comboBox1
+            // sort
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 90);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(158, 22);
-            this.comboBox1.TabIndex = 56;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.sort.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.sort.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.sort.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.sort.FormattingEnabled = true;
+            this.sort.Location = new System.Drawing.Point(12, 90);
+            this.sort.Margin = new System.Windows.Forms.Padding(2);
+            this.sort.Name = "sort";
+            this.sort.Size = new System.Drawing.Size(158, 22);
+            this.sort.TabIndex = 56;
+            this.sort.SelectedIndexChanged += new System.EventHandler(this.sort_SelectedIndexChanged);
             // 
             // addBtn
             // 
@@ -184,7 +184,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.leftBtn);
             this.Controls.Add(this.addBtn);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.sort);
             this.Controls.Add(this.LogInBtn);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.FullName);
@@ -209,7 +209,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button LogInBtn;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox sort;
         private System.Windows.Forms.Button addBtn;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label RightBtn;

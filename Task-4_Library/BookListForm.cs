@@ -49,9 +49,9 @@ namespace Task_4_Library
         {
             allBooks = libraryEntities.Book.ToList();
             GenerateCards(tableLayoutPanel1, allBooks, userRole);
-            comboBox1.Items.Add("Без сортировки");
-            comboBox1.Items.Add("По убыванию даты выдачи");
-            comboBox1.SelectedIndex = 0;
+            sort.Items.Add("Без сортировки");
+            sort.Items.Add("По убыванию даты выдачи");
+            sort.SelectedIndex = 0;
         }
         public static void GenerateCards(TableLayoutPanel tableLayoutPanel1, List<Book> books, int userRole)
         {
@@ -64,33 +64,7 @@ namespace Task_4_Library
                 bookCard.Width = tableLayoutPanel1.ClientSize.Width / 1 - 10;
                 bookCard.Height = 170;
 
-                //PictureBox bookImage = new PictureBox();
-                //bookImage.SizeMode = PictureBoxSizeMode.StretchImage;
-                //bookImage.Width = 150;
-                //bookImage.Height = 100;
-                //if (book.BookInvenoryNumber != 0)
-                //{
-                //    if (book.BookInvenoryNumber == 1001) bookImage.Image = Properties.Resources.a1;
-                //    else if (book.BookInvenoryNumber == 1002) bookImage.Image = Properties.Resources.a2;
-                //    else if (book.BookInvenoryNumber == 1004) bookImage.Image = Properties.Resources.a4;
-                //    else if (book.BookInvenoryNumber == 1005) bookImage.Image = Properties.Resources.a5;
-                //    else if (book.BookInvenoryNumber == 1008) bookImage.Image = Properties.Resources.a8;
-                //    else if (book.BookInvenoryNumber == 1010) bookImage.Image = Properties.Resources.a10;
-                //    else if (book.BookInvenoryNumber == 1015) bookImage.Image = Properties.Resources.a15;
-                //    else if (book.BookInvenoryNumber == 1018) bookImage.Image = Properties.Resources.a18;
-                //    else if (book.BookInvenoryNumber == 1020) bookImage.Image = Properties.Resources.a20;
-                //    else if (book.BookInvenoryNumber == 1021) bookImage.Image = Properties.Resources.a21;
-                //    else bookImage.Image = Properties.Resources.picture;
-                //}
-                //else
-                //{
-                //    bookImage.Image = Properties.Resources.picture;
-                //}
-
-                //bookImage.Top = (bookCard.Height - bookImage.Height) / 2;
-                //bookImage.Left = 10;
-
-                
+                // Удаление ненужных комментариев
 
                 Panel separationPanel = new Panel();
                 separationPanel.Width = 2;
@@ -266,11 +240,8 @@ namespace Task_4_Library
             UpdateProductCards();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            _selectedSort = comboBox1.SelectedItem.ToString();
-            UpdateProductCards();
-        }
+        // Убрал предыдущий метод, так как он имел неправильное название
+
         bool isAdd;
         private void button1_Click(object sender, EventArgs e)
         {
@@ -278,6 +249,12 @@ namespace Task_4_Library
             this.Hide();
             AddBookForm addBookForm = new AddBookForm(null, true);
             addBookForm.Show();
+        }
+
+        private void sort_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _selectedSort = sort.SelectedItem.ToString();
+            UpdateProductCards();
         }
     }
 }
