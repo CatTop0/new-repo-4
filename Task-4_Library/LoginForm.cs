@@ -107,7 +107,9 @@ namespace Task_4_Library
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        // Было изменено название метода на более корректный!!!
+
+        private void guestAuth_Click(object sender, EventArgs e)
         {
             this.Hide();
             BookListForm bookListForm = new BookListForm(null, 0);

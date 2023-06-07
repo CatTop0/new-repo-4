@@ -33,7 +33,7 @@
             this.LogInBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.RegLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.guestAuth = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LoginField
@@ -96,18 +96,18 @@
             this.RegLabel.TabIndex = 56;
             this.RegLabel.Text = "Авторизация";
             // 
-            // label1
+            // guestAuth
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(75, 244);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 19);
-            this.label1.TabIndex = 57;
-            this.label1.Text = "Войти как гость";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.guestAuth.AutoSize = true;
+            this.guestAuth.BackColor = System.Drawing.Color.Transparent;
+            this.guestAuth.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guestAuth.ForeColor = System.Drawing.Color.Black;
+            this.guestAuth.Location = new System.Drawing.Point(75, 244);
+            this.guestAuth.Name = "guestAuth";
+            this.guestAuth.Size = new System.Drawing.Size(130, 19);
+            this.guestAuth.TabIndex = 57;
+            this.guestAuth.Text = "Войти как гость";
+            this.guestAuth.Click += new System.EventHandler(this.guestAuth_Click);
             // 
             // LoginForm
             // 
@@ -115,7 +115,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(276, 285);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.guestAuth);
             this.Controls.Add(this.RegLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.LogInBtn);
@@ -139,7 +139,7 @@
         private System.Windows.Forms.Button LogInBtn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label RegLabel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label guestAuth;
     }
 }
 
