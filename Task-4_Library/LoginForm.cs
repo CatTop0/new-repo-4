@@ -25,6 +25,9 @@ namespace Task_4_Library
         SqlCommand cmd;
         SqlConnection cn;
         SqlDataReader dr;
+
+        // Da.
+
         private void LoginForm_Load(object sender, EventArgs e)
         {
             cn = new SqlConnection(@"data source=LAPTOP-9SF09P2S\SQLEXPRESS;initial catalog=Library;integrated security=True");
